@@ -1,0 +1,35 @@
+{
+  "name": "jasonchallenge7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angularjs": "0.0.1",
+    "assert": "^2.0.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "fine-uploader": "^5.16.2",
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security",
+    "mkdirp": "^0.5.5",
+    "mocha": "^8.2.1",
+    "move-file": "^2.0.0",
+    "multiparty": "^4.2.2",
+    "mysql": "^2.18.1",
+    "os": "^0.1.1",
+    "path": "^0.12.7",
+    "promise": "^8.1.0",
+    "rimraf": "^3.0.2",
+    "session": "^0.1.0",
+    "supertest": "^6.0.1",
+    "temp-write": "^4.0.0",
+    "url": "^0.11.0",
+    "uuid": "^8.3.1"
+  }
+}
