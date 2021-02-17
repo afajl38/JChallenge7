@@ -12,7 +12,6 @@
     <!-- Fine Uploader JS file
     ====================================================================== -->
     <script src="fine-uploader/fine-uploader/fine-uploader.js"></script>
-
     <!-- Fine Uploader Thumbnails template w/ customization
     ====================================================================== -->
     <script type="text/template" id="qq-template-manual-trigger">
@@ -23,6 +22,7 @@
             <div class="qq-upload-drop-area-selector qq-upload-drop-area" qq-hide-dropzone>
                 <span class="qq-upload-drop-area-text-selector"></span>
             </div>
+
             <div class="buttons">
                 <div class="qq-upload-button-selector qq-upload-button">
                     <div>Select files</div>
@@ -141,8 +141,17 @@
 
 
 </script>
+<style>
 
-
+   #request-id,#Submit,#Cancel,#Approve,#Clear {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid #00ddb8;
+        margin-bottom: 15px;
+        box-sizing:border-box;
+    }
+</style>
+<i>ur rid is </i><output id="rid"></output>
 <div id="submit-form">
 <form id="what" name="what">
 
@@ -151,21 +160,17 @@
         <option value="staff">staff</option>
         <option value="guest">guest</option>
     </select>
-
-
-    <input for="username" id="username" name="username" required>
-
-
-    <input type='reset' value='Clear' name='Clear' onclick="return (this.form);">
+    <input type='reset' value='Clear' name='Clear' id="Clear" onclick="return (this.form);">
 </form>
 </div>
 
 
 
+
+<button id="request-id">click this button to get request ID before yall submit</button>
 <button id="Submit">Submit</button>
 <button id="Cancel" onclick="myFunction()">Cancel</button>
 <button id="Approve">Approve</button>
-
 
 <script>
     $('form[name="what"] input:reset').click(function () {
@@ -196,7 +201,7 @@
             success:function(data){
 
                 console.log(data[0].status);
-
+                   
 
 
 
@@ -219,7 +224,7 @@ $('#Approve').click(function(){
         success:function(approvefiles123){
             console.log(approvefiles123.err);
 
-            console.log("ajax successfully send request to server side");
+            console.log("successfully send request to server side");
         }
 
     });
