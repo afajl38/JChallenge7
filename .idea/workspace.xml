@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="15923e3e-3f55-404a-93ad-8d23ea5542e6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ideas about Approve" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/U know the rules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example.html" beforeDir="false" afterPath="$PROJECT_DIR$/example.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan999" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/totally useless" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/1210262156081973.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/IMG_0082.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/IMG_0083.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/c17ff37acbfb0df2744e9fe007330d67.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="b923a9d0-37e0-4ebc-be2a-c1c10017dd0d" />
+  </component>
+  <component name="ProjectId" id="1knWeIgCyndp1YAF5dI698YwPBS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/app.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.app.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="15923e3e-3f55-404a-93ad-8d23ea5542e6" name="Default Changelist" comment="" />
+      <created>1606336210530</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606336210530</updated>
+      <workItem from="1606336213071" duration="290000" />
+      <workItem from="1606336934431" duration="598000" />
+      <workItem from="1606754933272" duration="538000" />
+      <workItem from="1606853232996" duration="732000" />
+      <workItem from="1606854422608" duration="58000" />
+      <workItem from="1606855378382" duration="1071000" />
+      <workItem from="1606927390492" duration="7178000" />
+      <workItem from="1606940384629" duration="4000" />
+      <workItem from="1606940485619" duration="803000" />
+      <workItem from="1607016820105" duration="4792000" />
+      <workItem from="1607023434289" duration="3538000" />
+      <workItem from="1612987163155" duration="1307000" />
+      <workItem from="1613584838625" duration="5624000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app.js</url>
+          <line>61</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
