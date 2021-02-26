@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -143,7 +143,7 @@
 </script>
 <style>
 
-   #request-id,#Submit,#Cancel,#Approve,#Clear {
+   #request-id,#Submit,#Cancel,#Approve{
         width: 100%;
         padding: 15px;
         border: 1px solid #00ddb8;
@@ -151,10 +151,10 @@
         box-sizing:border-box;
     }
 </style>
-<i>ur rid is </i><output id="rid"></output>
+<p> your rid is </p>
 <div id="submit-form">
 <form id="what" name="what">
-
+    <output id="tiltedproof"></output>
     <label for="status" >Status</label>
     <select name="status" id="status"required>
         <option value="staff">staff</option>
@@ -164,10 +164,7 @@
 </form>
 </div>
 
-
-
-
-<button id="request-id">click this button to get request ID before yall submit</button>
+<button id="request-rid">click this button to get request ID before yall submit</button>
 <button id="Submit">Submit</button>
 <button id="Cancel" onclick="myFunction()">Cancel</button>
 <button id="Approve">Approve</button>
@@ -185,25 +182,46 @@
     }
     // Cancel Button
 
+    $('#request-rid').one('click',function(){
+
+        $.ajax({
+            url:"http://localhost:8190/fineupload002",
+            Method:"GET",
+            dataType:"JSON",
+
+
+            success:function(results){
+              $("#tiltedproof").append(results[0]);
+                //append
+                console.log(results);
+            },
+            error:function(status,error){
+                console.log('Error:'+error.message);
+                $('#rid').html('Error');
+            }
+
+        })
+        
+
+
+    });
 
     $('#Submit').click(function(){
 
         var m = document.getElementById('status').value;
-        console.log();
-
+        var n = document.getElementById('tiltedproof').value;
 
         $.ajax({
-            url:"http://localhost:8190/fineupload002",
-            Method:"POST",
-            data:"&status="+m,
+            url:"http://localhost:8190/fineupload003",
+            Method:"GET",
+            data:"&status="+m+"&RID="+n,
             dataType: "JSON",
 
             success:function(data){
-
-                console.log(data[0].status);
-                   
-
-
+                        console.log("yeet");
+            },
+            error:function (status,error){
+                console.log('Error'+error.message);
 
             }
 
@@ -217,7 +235,7 @@ $('#Approve').click(function(){
     console.log();
 
     $.ajax({
-        url:"http://localhost:8190/fineupload003",
+        url:"http://localhost:8190/fineupload004",
         Method:"POST",
         dataType: "JSON",
 

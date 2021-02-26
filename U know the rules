@@ -4,3 +4,26 @@ RID, File path, input1, unapproved/approved;
 
                         |
 
+uploaded then generate RID? = user clicked the button - sent request to server side, generate RID in server side?? -
+
+                        |
+
+send RID to client side,
+
+                        |
+
+[RID, status, uuid, filename] send to mysql. (submit button)  - verify if RID is repeated, used mysql to change in database; send changed RID to client side;7
+
+                        |
+
+verify if user is staff, approve file, change file location ( approve button)
+
+
+
+
+
+
+
+
+
+

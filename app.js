@@ -5,8 +5,6 @@ var express           = require("express"),
     app               = express(),
     multiparty        = require('multiparty'),
     bodyParser        = require('body-parser'),
-    fs                = require('fs'),
-    bodyParser        = require('body-parser'),
     session           = require('express-session'),
     $                 = require( 'jquery' ),
     mysql             = require('mysql'),
@@ -14,6 +12,8 @@ var express           = require("express"),
     fileInputName     = process.env.FILE_INPUT_NAME || "qqfile",
     uploadedFilesPath = 'uploads',
     chunkDirName      = "chunks",
+    util              = require('util'),
+    plato             = [],
     port              = 8190,
     moveFile          = require('move-file');
     maxFileSize       = process.env.MAX_FILE_SIZE || 0; // in bytes, 0 for unlimited
@@ -32,7 +32,7 @@ var con = mysql.createConnection({
 });
 
 
-var plato = [];
+
 
 
 function onUpload(req, res) {
@@ -46,6 +46,7 @@ function onUpload(req, res) {
 
         if (partIndex == null) {
             onSimpleUpload(fields, files[fileInputName][0], res);
+
         }
         else {
             onChunkedUpload(fields, files[fileInputName][0], res);
@@ -60,6 +61,7 @@ function onSimpleUpload(fields, file, res) {
 
     file.name = fields.qqfilename;
     plato.push(uuid);
+
     if (isValid(file.size)) {
         moveUploadedFile(file, uuid, function() {
                 responseData.success = true;
@@ -134,7 +136,7 @@ function isValid(size) {
 function finemoveFile(destinationDir, sourceFile, destinationFile, success, failure) {
 console.log(destinationDir);
     console.log(sourceFile);
-
+plato.push(sourceFile);
 console.log(destinationFile);
     mkdirp(destinationDir, function(error) {
         var sourceStream, destStream;
@@ -164,7 +166,6 @@ console.log(destinationFile);
 function moveUploadedFile(file, uuid, success, failure) {
     var destinationDir = uploadedFilesPath + "/",
         fileDestination = destinationDir + file.name;
-    plato.push(fileDestination);
     finemoveFile(destinationDir, file.path, fileDestination, success, failure);
 }
 function storeChunk(file, uuid, index, numChunks, success, failure) {
@@ -239,29 +240,44 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
 
 
+// RID request handler
+app.get('/fineupload002',function(req,res){
+    var rid = () => parseInt(Date.now() * Math.random());
+    var cuong = [];
+    cuong.push(rid());
 
-app.get('/fineupload003',function(req,res){
+    // console.log(rid);
 
+    console.log('Request Received!');
+    console.log(rid());
 
-
+    res.send(cuong);
 
 });
-// app.get('/fineupload002',function(req,res) {
-//     var Status = req.query.status;
-//     plato.push(Status);
-//     console.log(plato);
-//     var sql = "INSERT INTO Study.Jasonchallenge7(uniqueid,filename,status) VALUES (?)";
-//     // console.log(Status);
-//     // console.log(!!Status);
-//     plato = [];
-//     if(!!Status){
-//         con.query(sql, [],function (err, results) {
-//             console.log(err);
-//             console.log(results);
-//         });
-//     }else{
-//         res.send('Incorrect input ')
-//     };
-// });
 
+
+
+// submit request handler
+app.get('/fineupload003',function(req,res) {
+    var Status = req.query.status;
+    var thug4life = req.query.RID;
+    console.log(Status);
+    console.log(thug4life);
+    console.log(plato);
+    plato.push(Status);
+    plato.push(thug4life);
+    console.log(plato);
+
+
+    var sql = "INSERT INTO Study.Jasonchallenge7(uuid,FileSource,Status,RID) VALUES (?)";
+
+    if(!!Status){
+        con.query(sql, [],function (err, results) {
+            console.log(err);
+            console.log(results);
+        });
+    }else{
+        res.send('Incorrect input ')
+    };
+});
 

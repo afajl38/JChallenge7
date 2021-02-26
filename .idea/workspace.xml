@@ -2,22 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15923e3e-3f55-404a-93ad-8d23ea5542e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ideas about Approve" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/U know the rules" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kaligoskr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/U know the rules" beforeDir="false" afterPath="$PROJECT_DIR$/U know the rules" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example.html" beforeDir="false" afterPath="$PROJECT_DIR$/example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan999" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/totally useless" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/1210262156081973.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/IMG_0082.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/IMG_0083.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/c17ff37acbfb0df2744e9fe007330d67.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/download.jpeg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,10 +39,16 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -46,13 +56,17 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.app.js">
     <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/app.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="kaligoskr.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/kaligoskr.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.app.js" />
+        <item itemvalue="Node.js.kaligoskr.js" />
       </list>
     </recent_temporary>
   </component>
@@ -79,22 +93,36 @@
       <workItem from="1607016820105" duration="4792000" />
       <workItem from="1607023434289" duration="3538000" />
       <workItem from="1612987163155" duration="1307000" />
-      <workItem from="1613584838625" duration="5624000" />
+      <workItem from="1613584838625" duration="5828000" />
+      <workItem from="1614016665031" duration="2710000" />
+      <workItem from="1614026377668" duration="524000" />
+      <workItem from="1614026980286" duration="1660000" />
+      <workItem from="1614110359550" duration="1277000" />
+      <workItem from="1614186907563" duration="10280000" />
+      <workItem from="1614359085349" duration="7759000" />
     </task>
+    <task id="LOCAL-00001" summary="y66eet">
+      <created>1613593342930</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1613593342930</updated>
+    </task>
+    <task id="LOCAL-00002" summary="y66eet">
+      <created>1613593398563</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1613593398563</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app.js</url>
-          <line>61</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="y66eet" />
+    <option name="LAST_COMMIT_MESSAGE" value="y66eet" />
   </component>
 </project>
